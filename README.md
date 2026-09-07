@@ -20,8 +20,6 @@ The system demonstrates real-world distributed-system concepts such as **microse
 * 💰 Transaction refund/compensation
 * 🔔 Event-driven notifications
 * 💳 Razorpay payment integration
-* 🔗 Razorpay webhook handling
-* 🐳 Docker Compose support
 * 🔀 REST + OpenFeign service-to-service communication
 
 ---
