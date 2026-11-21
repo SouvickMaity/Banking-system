@@ -216,7 +216,7 @@ Fraud Detection
 
 # 🔒 Redis-Based Idempotency & Duplicate Transaction Prevention
 
-# Implemented a Redis-backed idempotency mechanism to prevent duplicate fund transfers and ensure reliable transaction processing.
+    Implemented a Redis-backed idempotency mechanism to prevent duplicate fund transfers and ensure reliable transaction processing.
 
     🚀 Key Features
     
