@@ -1046,8 +1046,6 @@ Possible improvements include:
 * Prometheus + Grafana monitoring
 * Dead Letter Topics for failed Kafka messages
 * Kafka retry mechanisms
-* Idempotent event processing
-* Database-per-service enforcement
 * Circuit breakers using Resilience4j
 * Outbox Pattern for reliable event publishing
 * Kubernetes deployment
