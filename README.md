@@ -214,6 +214,48 @@ Fraud Detection
 
 ---
 
+# 🔒 Redis-Based Idempotency & Duplicate Transaction Prevention
+
+# Implemented a Redis-backed idempotency mechanism to prevent duplicate fund transfers and ensure reliable transaction processing.
+
+    🚀 Key Features
+    
+    🔑 Unique Idempotency Keys: Uses unique idempotency keys to identify individual fund-transfer requests.
+    
+    🛡️ Duplicate Request Detection: Checks Redis for existing idempotency keys before processing a transfer to prevent duplicate transactions.
+    
+    📊 Transaction State Management: Maintains transaction states (PROCESSING, COMPLETED, FAILED) in Redis to track request execution.
+    
+    ⏳ TTL-Based Key Expiration: Automatically manages idempotency record expiration using Redis TTL:
+    
+    PROCESSING → 5 minutes
+    
+    COMPLETED / FAILED → 24 hours
+    
+    🔄 Retry Handling: Handles repeated requests by checking existing transaction status instead of executing the same transfer again.
+    
+    ⚙️ Transaction Workflow
+    
+    📥 Client sends a fund-transfer request with a unique idempotency key.
+    
+    🔍 Application checks Redis for an existing idempotency key.
+    
+    ✅ If the key is new, its status is set to PROCESSING and the transaction proceeds.
+    
+    🚫 If the same key is received again, the application checks its existing status and prevents duplicate processing.
+    
+    📌 After execution, the transaction status is updated to COMPLETED or FAILED.
+    
+    💡 Benefits
+    
+    Prevents duplicate fund transfers caused by repeated API requests.
+    
+    Improves transaction reliability during client retries and network failures.
+    
+    ⚡ Reduces unnecessary transaction processing.
+    
+    🧹 Automatically manages idempotency record expiration using Redis TTL.
+
 # ✅ Clean Transaction Flow
 
 If the transaction is considered safe:
