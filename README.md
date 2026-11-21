@@ -12,6 +12,7 @@ The system demonstrates real-world distributed-system concepts such as **microse
 * 💸 Account-to-account money transfer
 * 🔐 OTP-based transaction verification
 * ⚡ Redis-based OTP storage with expiration
+*⚡ Redis-based idempotency using unique keys to prevent duplicate fund transfers
 * 🚦 API Gateway with rate limiting
 * 🔄 Saga-style transaction workflow with compensation
 * 📨 Kafka-based asynchronous communication
