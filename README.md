@@ -230,7 +230,8 @@ Fraud Detection
     
     PROCESSING → 5 minutes
     
-    COMPLETED / FAILED → 24 hours
+    COMPLETED  → 24 hours
+    FAILED : -> remove 
     
     🔄 Retry Handling: Handles repeated requests by checking existing transaction status instead of executing the same transfer again.
     
